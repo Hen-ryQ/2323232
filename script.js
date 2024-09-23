@@ -61,7 +61,6 @@ if (window.location.pathname.endsWith("paint.html")) {
   window.addEventListener("resize", resizeCanvas);
   resizeCanvas(); 
 
-  // painting logic hgereee
 
 
   canvas.addEventListener("mousedown", (e) => {
@@ -120,7 +119,6 @@ if (window.location.pathname.endsWith("paint.html")) {
     ];
   }
 
-  // timer logic
   function startTimer() {
     if (secondsRemaining >= 0) {
       timerDisplay.textContent = formatTime(secondsRemaining);
@@ -133,7 +131,7 @@ if (window.location.pathname.endsWith("paint.html")) {
     }
   }
 
-  startTimer(); // initla  call to start the timer
+  startTimer();
 
   function formatTime(seconds) {
     const minutes = Math.floor(seconds / 60);
